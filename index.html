@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <formm method="get" action="./loginsuccess.html">
+        <fieldset>
+            <legend>Enter detailsto login</legend>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" maxilength="12" pattern="[a-zA-Z/d]{8,12}"
+            title="please follow the pattern of minimum characters of 8 and max char of 12 along with  numbers" required><br>
+
+    <label for="password">Password</label><br>
+    <input type="password" id="password" maxilength="12" pattern="(?=.*[A-Z])(?=.*[0-9])(/=.*[@#$!&]).{8,16}"
+    title="please  enter the correct  password " required> <br>
+    <input  type="submit" value="Login Now"><br>
+    <button><a href="forgot.html">Forgot Details</a></button>
+    <button><a href="./register.html">Register Now</a></button>
+
+        </fieldset>
+    </formm>
+    
+</body>
+</html>
